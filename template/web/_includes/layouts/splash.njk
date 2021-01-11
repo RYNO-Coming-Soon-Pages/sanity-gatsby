@@ -1,0 +1,73 @@
+---
+heading: This title should be overwritten
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>RYNO Strategic Solutions</title>
+        <style>
+            .container {
+                box-shadow: 2px 8px 20px 0 rgb(212, 100, 41);
+                margin-top:50px;
+                margin-bottom:50px;
+                padding: 25px;
+            }
+            .logo {
+                max-width: 400px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .intro-text {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                min-height: 150px;
+            }
+            strong a{
+                color: #dc6b28;
+            }
+            strong a:hover{
+                color: #dc6b28;
+                text-decoration: none; 
+            }
+            .van {
+                max-width: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .address, .copyright {
+                font-size: 10px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="logo.png" alt="" class="logo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs col-lg-12">
+                    <div class="intro-text flex-column">
+                        <h2>{{ heading }}</h2>
+                        <p>In the meantime you can reach us at <strong><a href="tel:888-888-8888">(888) 888-8888</a></strong> or email us at <strong><a href="mailto:info@rynoss.com">info@rynoss.com</a></strong>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="copyright">© 2021 Copyright RYNO Strategic Solutions</p>
+            <p class="address">22601 N 17th Ave, #250 Phoenix, AZ 85027</p>
+        </div>
+    </body>
+</html>

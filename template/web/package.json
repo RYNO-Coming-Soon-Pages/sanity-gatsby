@@ -1,0 +1,15 @@
+{
+  "name": "eleventy-coming-soon-page",
+  "version": "1.0.0",
+  "description": "SSG for coming soon pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "author": "RYNO Strategic Solutions - Chad Mueller",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  }
+}
