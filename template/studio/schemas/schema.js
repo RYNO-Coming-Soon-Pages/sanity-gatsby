@@ -1,5 +1,6 @@
 // First, we must import the schema creator
 import createSchema from 'part:@sanity/base/schema-creator'
+import info from './info';
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from 'all:part:@sanity/base/schema-type'
@@ -12,5 +13,6 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
+    info
   ]),
 })
