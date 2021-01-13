@@ -1,0 +1,72 @@
+{
+    "version": 0,
+    "title": "RYNO Coming Soon Template",
+    "description": "Coming soon splash page factory.",
+    "previewMedia": {
+      "type": "image",
+      "src": "assets/frontend.png",
+      "alt": "Awesome preview image goes here"
+    },
+    "technologies": [{
+        "id": "eleventy",
+        "name": "Eleventy",
+        "url": "https://www.11ty.io/"
+      },
+      {
+        "id": "netlify",
+        "name": "Netlify",
+        "url": "https://www.netlify.com/"
+      }
+    ],
+    "deployments": [{
+        "id": "studio",
+        "type": "studio",
+        "title": "Sanity Studio",
+        "description": "The Sanity Studio is where you edit and structure your content.",
+        "dir": "./studio",
+        "provider": {
+          "name": "netlify",
+          "config": {
+            "base": "/",
+            "dir": "/studio/dist",
+            "cmd": "npm run build-studio && cp studio/netlify.toml studio/dist"
+          },
+          "requirements": ["build-hook"]
+        },
+        "previewMedia": {
+          "type": "image",
+          "src": "assets/studio.png",
+          "alt": "A preview image of the Sanity Studio."
+        }
+      },
+      {
+        "id": "web",
+        "type": "web",
+        "title": "Marketing Website",
+        "description": "A simple coming soon page.",
+        "dir": "./web",
+        "requiredTokens": [{
+          "role": "deploy-studio",
+          "label": "GraphQL API Deployer"
+        }],
+        "provider": {
+          "name": "netlify",
+          "config": {
+            "base": "/",
+            "dir": "/web/public",
+            "cmd": "npm run build-web"
+          },
+          "requirements": ["build-hook"]
+        },
+        "previewMedia": {
+          "type": "image",
+          "src": "assets/frontend.png",
+          "alt": "A preview image of the frontend"
+        },
+        "requiredCorsOrigins": [{
+          "origin": "http://localhost:8000",
+          "allowCredentials": false
+        }]
+      }
+    ]
+  }
