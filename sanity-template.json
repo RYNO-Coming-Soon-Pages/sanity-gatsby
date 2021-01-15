@@ -29,7 +29,7 @@
           "config": {
             "base": "/",
             "dir": "/studio/dist",
-            "cmd": "npm run build-studio && cp studio/netlify.toml studio/dist"
+            "cmd": "npm run build-studio && cp studio/netlify.toml ./studio/dist"
           },
           "requirements": ["build-hook"]
         },
@@ -45,15 +45,12 @@
         "title": "Marketing Website",
         "description": "A simple coming soon page.",
         "dir": "./web",
-        "requiredTokens": [{
-          "role": "deploy-studio",
-          "label": "GraphQL API Deployer"
-        }],
+        "requiredTokens": [],
         "provider": {
           "name": "netlify",
           "config": {
             "base": "/",
-            "dir": "/web/public",
+            "dir": "/web/_site",
             "cmd": "npm run build-web"
           },
           "requirements": ["build-hook"]
