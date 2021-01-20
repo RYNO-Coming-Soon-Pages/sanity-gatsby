@@ -18,7 +18,7 @@ export default {
                   },
                   {
                     buildHookId: '<#<deployments.web.providerInfo.buildHookId>#>',
-                    title: 'Blog Website',
+                    title: 'Coming Soon Site',
                     name: '<#<deployments.web.providerInfo.siteName>#>',
                     apiId: '<#<deployments.web.providerInfo.siteId>#>'
                   }
