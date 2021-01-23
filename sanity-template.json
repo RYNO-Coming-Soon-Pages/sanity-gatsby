@@ -4,8 +4,8 @@
     "description": "Coming soon splash page factory.",
     "previewMedia": {
       "type": "image",
-      "src": "assets/frontend.png",
-      "alt": "Awesome preview image goes here"
+      "src": "assets/template-thumb.png",
+      "alt": "Coming Soon Thumb"
     },
     "technologies": [{
         "id": "eleventy",
