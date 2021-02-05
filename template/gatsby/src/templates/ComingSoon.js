@@ -10,7 +10,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
 export const query = graphql`
-    query ($slug: String!) {
+    query ($slug: String) {
         sanityInfo(slug: {eq: $slug}) {
             email
             phone
