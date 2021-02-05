@@ -45,7 +45,10 @@
         "title": "Coming Soon Pages",
         "description": "A simple coming soon page.",
         "dir": "./gatsby",
-        "requiredTokens": [],
+        "requiredTokens": [{
+          "role": "deploy-studio",
+          "label": "GraphQL API Deployer"
+        }],
         "provider": {
           "name": "netlify",
           "config": {
