@@ -4,25 +4,22 @@ export default {
     type: 'document',
     fields: [
         {
+            name: 'slug',
+            title: 'Slug',
+            type: 'string'
+        },
+        {
             name: 'logo',
             title: 'Logo',
             type: 'image',
-            fields: [
-                {
-                  name: 'caption',
-                  type: 'string',
-                  title: 'Caption',
-                  options: {
-                    isHighlighted: true // <-- make this field easily accessible
-                  }
-                },
-                {
-                  // Editing this field will be hidden behind an "Edit"-button
-                  name: 'attribution',
-                  type: 'string',
-                  title: 'Attribution',
-                }
-              ]
+            // fields: [
+            //     {
+            //       // Editing this field will be hidden behind an "Edit"-button
+            //       name: 'attribution',
+            //       type: 'string',
+            //       title: 'Attribution',
+            //     }
+            //   ]
         },
         {
             name: 'heading',

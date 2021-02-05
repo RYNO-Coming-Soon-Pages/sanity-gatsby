@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "sanity-eleventy-blog",
+  "name": "sanity-gatsby",
   "description": "",
   "main": "index.js",
   "version": "1.0.0",

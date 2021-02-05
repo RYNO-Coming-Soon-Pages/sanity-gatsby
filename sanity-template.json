@@ -8,9 +8,9 @@
       "alt": "Coming Soon Thumb"
     },
     "technologies": [{
-        "id": "eleventy",
-        "name": "Eleventy",
-        "url": "https://www.11ty.io/"
+        "id": "gatsby",
+        "name": "Gatsby",
+        "url": "https://www.gatsbyjs.org/"
       },
       {
         "id": "netlify",
@@ -42,15 +42,15 @@
       {
         "id": "web",
         "type": "web",
-        "title": "Marketing Website",
+        "title": "Coming Soon Pages",
         "description": "A simple coming soon page.",
-        "dir": "./web",
+        "dir": "./gatsby",
         "requiredTokens": [],
         "provider": {
           "name": "netlify",
           "config": {
             "base": "/",
-            "dir": "/web/_site",
+            "dir": "/gatsby/public",
             "cmd": "npm run build-web"
           },
           "requirements": ["build-hook"]

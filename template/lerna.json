@@ -1,4 +1,4 @@
 {
-    "packages": ["web", "studio"],
+    "packages": ["gatsby", "studio"],
     "version": "1.0.0"
 }

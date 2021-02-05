@@ -1,11 +1,11 @@
 {
   "root": true,
   "project": {
-    "name": "<#< sanity.projectTitle >#>"
+    "name": "TMP Chads Heating and Air coming soon splash"
   },
   "api": {
-    "projectId": "<#< sanity.projectId >#>",
-    "dataset": "<#< sanity.dataset >#>"
+    "projectId": "mqnw9q8f",
+    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
