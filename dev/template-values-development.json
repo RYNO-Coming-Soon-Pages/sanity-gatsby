@@ -1,11 +1,11 @@
 {
     "repository": {
-      "name": "sanity-eleventy-blog",
+      "name": "sanity-gatsby",
       "owner": "sanity-io",
       "private": false
     },
     "sanity": {
-      "dataset": "blog",
+      "dataset": "production",
       "projectId": "jmhf2rn8",
       "projectTitle": "Eleventy Blog (dev)"
     },
@@ -24,7 +24,7 @@
           "siteId": "58275684-e35f-46ee-9fda-a5151927cfb5        "
         }
       },
-      "web": {
+      "gatsby": {
         "url": "https://sanity-eleventy-blog-web-skupqnos.netlify.com/",
         "providerName": "netlify",
         "providerInfo": {

@@ -20,8 +20,7 @@ module.exports = {
       //the name of the plugin being added
       resolve: 'gatsby-source-sanity',
       options: {
-        projectId: process.env.SANITY_PROJECT_ID,
-        dataset: process.env.SANITY_DATASET,
+        ...clientConfig.sanity,
         watchMode: !isProd,
         token: process.env.SANITY_READ_TOKEN,
       }
