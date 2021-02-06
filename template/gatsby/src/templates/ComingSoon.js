@@ -35,7 +35,7 @@ export const query = graphql`
 const comingSoonTemplate = function(props) {
 
     var sanityInfo = undefined;
-    if (!sanityInfo) {
+    if (sanityInfo === undefined) {
         sanityInfo = { 
                 address: "1111 West Testing Lane2",
                 company: "Reliable Air Conditioning2",
