@@ -8,7 +8,6 @@ const path = require('path');
 async function turnDataIntoPages({ graphql, actions }) {
     //get template for page
     const comingSoonTemplate = path.resolve('./src/templates/ComingSoon.js')
-    
     //query data
     const { data } = await graphql(`
         query {
@@ -21,6 +20,7 @@ async function turnDataIntoPages({ graphql, actions }) {
     `);
     //loop over data and create pages
     data.allSanityInfo.nodes.forEach( (page) => {
+        console.log(page)
         actions.createPage({
             path: page.slug,
             component: comingSoonTemplate,

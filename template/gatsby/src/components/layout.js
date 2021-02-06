@@ -17,7 +17,7 @@ import GlobalStyles from "../styles/GlobalStyles"
 
 
 const Layout = ({sanityInfo, children}) => {
- console.log(sanityInfo); 
+ //console.log(sanityInfo); 
 
   const highlightColor = sanityInfo.highlightColor.hex;
   const logoSrc = sanityInfo.logo.asset.fixed.src;
