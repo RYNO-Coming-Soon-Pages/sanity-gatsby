@@ -19,10 +19,11 @@ import GlobalStyles from "../styles/GlobalStyles"
 const Layout = ({sanityInfo, children}) => {
  //console.log(sanityInfo); 
 
-  const highlightColor = sanityInfo.highlightColor.hex;
+  
   const logoSrc = sanityInfo.logo.asset.fixed.src;
   const address = sanityInfo.address;
   const company = sanityInfo.company;
+  const highlightColor = sanityInfo.highlightColor.hex;
   
   return (
     <>
