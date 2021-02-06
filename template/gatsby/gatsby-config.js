@@ -22,7 +22,7 @@ module.exports = {
       options: {
         ...clientConfig.sanity,
         watchMode: !isProd,
-        token: process.env.SANITY_READ_TOKEN,
+        token: process.env.SANITY_TOKEN,
       }
     }
     // `gatsby-plugin-react-helmet`,
