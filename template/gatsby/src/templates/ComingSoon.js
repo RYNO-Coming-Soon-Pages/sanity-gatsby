@@ -33,29 +33,8 @@ export const query = graphql`
 `
 
 const comingSoonTemplate = function(props) {
-
-    var sanityInfo = undefined;
-    if (sanityInfo === undefined) {
-        sanityInfo = { 
-                address: "1111 West Testing Lane2",
-                company: "Reliable Air Conditioning2",
-                email: "sample@sample.com2",
-                heading: "Our new website is coming soon-ish!2",
-                highlightColor: {
-                    hex: "#24e33f"
-                },
-                logo: {
-                    asset: {
-                        fixed: {
-                            src: "https://cdn.sanity.io/images/mqnw9q8f/production/b0b2a52891279ca88aed185ec3a8b3a6e86b8eef-4500x2215.jpg?w=400&h=197&fit=crop"
-                        }
-                    }
-                },
-                phone: "777-888-9999 2",
-                slug: "page2"
-            }
-    }
-    //console.log(sanityInfo);
+    const sanityInfo = props.data.sanityInfo;
+    
     return (
         <Layout sanityInfo={sanityInfo}>
         <main className="row">
